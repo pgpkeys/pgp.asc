@@ -357,9 +357,6 @@ th {
 /*
  * Grid
  */
-/* ============================================ */
-/* This file has a mobile-to-desktop breakpoint */
-/* ============================================ */
 @media screen and (max-width: 400px) {
   @-ms-viewport {
     width: 320px; } }
@@ -1545,7 +1542,7 @@ h1 {
   color: #394856;
   text-align: center; }
 
-h2, .footer h3, h4, h5 {
+h2, h3, h4, h5 {
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
   color: #4d6275; }
 
@@ -1625,6 +1622,13 @@ a:active {
  */
 .about {
   border-bottom: 1px solid #d8d8d8; }
+
+code {
+  padding: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 3px; }
 
 /*
  * Footer
