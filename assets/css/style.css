@@ -1634,7 +1634,7 @@ code {
 .tabs {
   position: relative;
   margin: 0 auto;
-  width: 95%; }
+  width: 100%; }
 
 .tabs input {
   position: absolute;
@@ -1642,7 +1642,7 @@ code {
   width: 120px;
   height: 40px;
   left: 0px;
-  top: 0px;
+  top: 20px;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
@@ -1658,13 +1658,13 @@ code {
   left: 360px; }
 
 .tabs label {
-  background: #5ba4a4;
-  background: -moz-linear-gradient(top, #5ba4a4 0%, #4e8c8a 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5ba4a4), color-stop(100%, #4e8c8a));
-  background: -webkit-linear-gradient(top, #5ba4a4 0%, #4e8c8a 100%);
-  background: -o-linear-gradient(top, #5ba4a4 0%, #4e8c8a 100%);
-  background: -ms-linear-gradient(top, #5ba4a4 0%, #4e8c8a 100%);
-  background: linear-gradient(top, #5ba4a4 0%, #4e8c8a 100%);
+  background: #394856;
+  background: -moz-linear-gradient(top, #bcc7d2 0%, #7e95aa);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bcc7d2), color-stop(100%, #7e95aa));
+  background: -webkit-linear-gradient(top, #bcc7d2 0%, #7e95aa);
+  background: -o-linear-gradient(top, #bcc7d2 0%, #7e95aa);
+  background: -ms-linear-gradient(top, #bcc7d2 0%, #7e95aa);
+  background: linear-gradient(top, #bcc7d2 0%, #7e95aa);
   font-size: 15px;
   line-height: 40px;
   height: 40px;
@@ -1673,7 +1673,7 @@ code {
   float: left;
   display: block;
   width: 80px;
-  color: #385c5b;
+  color: #4d6275;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: bold;
@@ -1693,7 +1693,7 @@ code {
   display: block; }
 
 .tabs input:hover + label {
-  background: #5ba4a4; }
+  background: #9daebe; }
 
 .tabs label:first-of-type {
   z-index: 4;
@@ -1718,9 +1718,9 @@ code {
 .content {
   background: #fff;
   position: relative;
-  overflow: overlay;
+  overflow: auto;
   width: 100%;
-  height: auto;
+  height: 90vh;
   z-index: 5;
   box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.1);
   border-radius: 0 3px 3px 3px; }
@@ -1751,21 +1751,6 @@ code {
   -o-transition: opacity ease-out 0.2s 0.1s;
   -ms-transition: opacity ease-out 0.2s 0.1s;
   transition: opacity ease-out 0.2s 0.1s; }
-
-.content div h2,
-.content div h3 {
-  color: #398080; }
-
-.content div p {
-  font-size: 14px;
-  line-height: 22px;
-  font-style: italic;
-  text-align: left;
-  margin: 0;
-  color: #777;
-  padding-left: 15px;
-  font-family: Cambria, Georgia, serif;
-  border-left: 8px solid rgba(63, 148, 148, 0.1); }
 
 /*
  * Footer
