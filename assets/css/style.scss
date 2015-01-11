@@ -291,10 +291,10 @@ h2, h3, h4, h5 {
      transition: opacity linear 0.1s;
  }
 
- .tabs input.tab-selector-1:checked ~ .content .content-1,
- .tabs input.tab-selector-2:checked ~ .content .content-2,
- .tabs input.tab-selector-3:checked ~ .content .content-3,
- .tabs input.tab-selector-4:checked ~ .content .content-4 {
+ .tabs input.tab-selector-1:checked ~ .content #content-1,
+ .tabs input.tab-selector-2:checked ~ .content #content-2,
+ .tabs input.tab-selector-3:checked ~ .content #content-3,
+ .tabs input.tab-selector-4:checked ~ .content #content-4 {
  	z-index: 100;
      -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
      filter: alpha(opacity=100);
