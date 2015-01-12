@@ -234,7 +234,27 @@
 		</div>
 	</section>
 	<!-- End of Footer -->
-
+<script>
+	var tabs = document.querySelectorAll('.nav-item');
+	Array.prototype.forEach.call(tabs, function(tab, i){		
+		tab.addEventListener('click',function(){
+			Array.prototype.filter.call(this.parentNode.children, function(child){
+  				if(child !== this){
+  					if (child.classList) {
+						child.classList.remove('active');
+					} else {
+						child.className = child.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+					}
+  				}
+			});
+			if (this.classList){
+				this.classList.add('active');
+			} else {
+				this.className += ' ' + 'active';
+			}
+		});
+	});
+</script>
 	<!-- Google Analytics -->
 	<script>
 	(function(b,o,i,l,e,r) {
