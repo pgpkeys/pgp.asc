@@ -21,6 +21,18 @@ $max-width: 768px;
     transition: $transition-property $transition-time $method;
 }
 
+// Clearfix
+
+.group:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
 //
 // Basics
 //
@@ -115,20 +127,26 @@ a:hover {
 //
 
 .content {
-	max-width: $max-width;
+	max-width: $max-width + 50px;
 	margin: 5vh auto;
 }
 
-.content__section{
-
+.content__hex {
+	width: 30%;
+	float: left;
+	vertical-align: middle;
 }
 
 .content__heading {
 	font-size: 30px;
+	width: 65%;
+	float: right;
 }
 
 .content__text {
-
+	width: 65%;
+	float: right;
+	margin-top: 0;
 }
 
 //
@@ -139,6 +157,7 @@ a:hover {
 	background-color: $dark-background-color;
 	color: white;
 	margin: 0;
+	display: none;
 }
 
 .footer__section {
@@ -147,4 +166,33 @@ a:hover {
 
 .footer__heading {
 	font-size: 18px;
+}
+
+//
+// Media Queries
+//
+
+@media screen and (max-width: $max-width) {
+	.content {
+		margin-left: 2vw;
+		margin-right: 2vw;
+	}
+
+	.content__section {
+		clear: both;
+	}
+
+	.content__hex {
+		display: block;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.content__heading {
+		width: 100%;
+	}
+
+	.content__text {
+		width: 100%;
+	}
 }
