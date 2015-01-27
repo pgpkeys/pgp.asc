@@ -486,10 +486,16 @@ a:hover {
 
 .footer__form--input {
   clear: both;
-  margin: 2px 0; }
+  margin: 2px 0;
+  background-color: #1b1b1b;
+  padding: 0.5em 1em; }
+
+input[type="text"] {
+  font-size: 14px; }
 
 .footer__form--submit-button {
-  padding-top: 4px; }
+  padding-top: 4px;
+  border-color: #888888; }
 
 ::-webkit-input-placeholder {
   font-size: 14px;

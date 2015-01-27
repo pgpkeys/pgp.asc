@@ -8,6 +8,7 @@
 
 $basecolor: #81ddb9;
 $dark-background-color: #1b1b1b;
+$grey: #888888;
 
 $max-width: 768px;
 
@@ -190,10 +191,17 @@ a:hover {
 .footer__form--input {
 	clear: both;
 	margin: 2px 0;
+	background-color: $dark-background-color;
+	padding: 0.5em 1em;
+}
+
+input[type="text"] {
+	font-size: 14px;
 }
 
 .footer__form--submit-button {
 	padding-top: 4px;
+	border-color: $grey;
 }
 
 ::-webkit-input-placeholder {
