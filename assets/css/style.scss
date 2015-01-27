@@ -134,7 +134,12 @@ a:hover {
 
 .content {
 	max-width: $max-width + 50px;
-	margin: 5vh auto;
+	margin: 0 auto;
+	padding: 7.5vh 0;
+}
+
+.content__section {
+	padding: 2.5vh 0; 
 }
 
 .content__hex {
@@ -164,7 +169,7 @@ a:hover {
 	display: inline-block;
 	background-color: $dark-background-color;
 	color: white;
-	margin: 0;
+	padding: 5vh 0;
 }
 
 .wrapper {
@@ -175,6 +180,7 @@ a:hover {
 .footer__section {
 	width: 30%;
 	float: left;
+	padding: 0 1.6666%;
 }
 
 .footer__heading {
