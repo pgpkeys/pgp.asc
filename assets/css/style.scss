@@ -50,6 +50,13 @@ h4 {
 	font-family: 'Merriweather', Georgia, serif;
 }
 
+a {
+	font-style: italic;
+	text-decoration: none;
+	color: $basecolor;
+	font-weight: 300;
+}
+
 a:hover {
 	@include transition(all, 100ms, ease-in-out);
 }

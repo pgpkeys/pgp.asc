@@ -380,6 +380,12 @@ h3,
 h4 {
   font-family: 'Merriweather', Georgia, serif; }
 
+a {
+  font-style: italic;
+  text-decoration: none;
+  color: #81ddb9;
+  font-weight: 300; }
+
 a:hover {
   -webkit-transition: all 100ms ease-in-out;
   -moz-transition: all 100ms ease-in-out;
