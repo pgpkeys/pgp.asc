@@ -532,6 +532,9 @@ a:hover {
   .footer__section {
     float: none;
     margin: 0 2vw;
-    width: 100%; } }
+    width: 100%; }
+
+  .footer__form--input {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
