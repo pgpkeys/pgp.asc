@@ -438,7 +438,8 @@ a:hover {
 .nav__item {
   display: inline-block;
   margin-right: 2em;
-  margin-top: 1em; }
+  margin-top: 1em;
+  font-style: normal; }
 
 .nav__item--active {
   color: #81ddb9; }
