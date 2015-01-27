@@ -187,8 +187,33 @@ a:hover {
 	font-size: 18px;
 }
 
-.footer__input {
+.footer__form--input {
 	clear: both;
+	margin: 2px 0;
+}
+
+.footer__form--submit-button {
+	padding-top: 4px;
+}
+
+::-webkit-input-placeholder {
+   font-size: 14px;
+   font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-size: 14px;
+   font-style: italic;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-size: 14px;
+   font-style: italic;  
+}
+
+:-ms-input-placeholder {  
+   font-size: 14px;
+   font-style: italic;  
 }
 
 //
