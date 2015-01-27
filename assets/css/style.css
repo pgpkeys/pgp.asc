@@ -497,9 +497,6 @@ a:hover {
   .content__text {
     width: 100%; }
 
-  .wrapper {
-    clear: both; }
-
   .footer__section {
     float: none;
     margin: 0 2vw;

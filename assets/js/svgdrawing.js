@@ -1,0 +1,1 @@
+var svg = new Vivus('logo', {type: 'delayed', start: 'autostart'});
