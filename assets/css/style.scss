@@ -4,186 +4,147 @@
 
 @import "normalize.scss";
 
-/*
- * Grid
- */ 
+// Variables
 
-@import "partials/unsemantic-grid-responsive";
+$basecolor: #81ddb9;
+$dark-background-color: black;
 
-// Functions
-
-/// Slightly lighten a color
-/// @access public
-/// @param {Color} $color - color to tint
-/// @param {Number} $percentage - percentage of `$color` in returned color
-/// @return {Color}
-@function tint($color, $percentage) {
-  @return mix($color, white, (100-$percentage));
-}
-
-/// Slightly darken a color
-/// @access public
-/// @param {Color} $color - color to shade
-/// @param {Number} $percentage - percentage of `$color` in returned color
-/// @return {Color}
-@function shade($color, $percentage) {
-  @return mix($color, black, (100-$percentage));
-}
-
-// Colors
-
-$darkblue: #008dba;
-$black: #313131;
-$grey: #6e6e6e;
-$basecolor: #394856;
-$backgroundcolor: tint($basecolor, 96);
-
-// Typography
-
-$sans: 'Lucida Grande','Lucida Sans Unicode','Lucida Sans',Geneva,Verdana,sans-serif;
-$serif: Georgia, Times, 'Times New Roman', serif;
-$monospace: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+$max-width: 768px;
 
 // Mixins
 
-@mixin transition($transition) {
-	-webkit-transition: $transition;
-	-moz-transition: $transition;
-	-o-transition: $transition;
-	transition: $transition;
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
 }
 
-/* 
- * General stuff
- */
+//
+// Basics
+//
 
 body {
-	background-color: $backgroundcolor;
-	color: $black;
-	font-family: $sans;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 18px;
 }
 
-h1 {
-	font-family: $monospace;
-	color: $basecolor;
-	text-align: center;
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Merriweather', Georgia, serif;
 }
 
-h2, .footer h3, h4, h5 {
- 	font-family: $monospace;
-	color: tint($basecolor,10);
+a:hover {
+	@include transition(all, 100ms, ease-in-out);
 }
 
- section {
- 	padding-bottom: 20px;
- 	padding-top: 20px;
- }
-
- section:first-child {
- 	padding-top: 0px;
- }
-
- a {
- 	color: tint($basecolor,40);
- 	&:visited {
- 		color: tint($basecolor,40);
- 	}
- 	&:hover,
- 	&:focus,
- 	&:active {
- 		color: tint($basecolor,30);
- 	}
- 	text-decoration: none;
- 	@include transition(100ms);
- }
-
- a:hover {
- 	color: $darkblue;
- }
-
- a:active {
- 	position: relative; 
- 	top: 1px;
- }
-
-/* 
- * Header
- */
+//
+// Header
+//
 
 .header {
-	background-color: $backgroundcolor;
-	&:first-child {
-		padding-top: 2em;
-	}
- 	a {
- 		color: tint($basecolor, 5);
- 		&:hover,
- 		&:focus,
- 		&:active {
- 			color: tint($basecolor,15);
-	 	}
- 	}
+	height: 100vh;
+	width: 100vw;
+	border-top: 0.5vh solid $basecolor;
+	background-color: $dark-background-color;
+	color: white;
 }
 
-/* Logo */
+.header__logo {
+	margin: 0 auto;
+	margin-top: 25vh;
+	height: 20vh;
+	width: 100%; // IE fix for responsive SVGs
+}
 
-.logo {
+.header__heading {
+	text-align: center;
+	font-size: 80px;
+	margin: 0;
+}
+
+.header__subheading {
+	text-align: center;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 36px;
 	margin-top: 0;
-	text-align: center;
-	font-family: $monospace;
-	font-size: 2em;
-	letter-spacing: 0.035em;
-	font-weight: 400;
-	color: $backgroundcolor;
-	a {
-		color: tint($basecolor,5);
-		&:hover,
-		&:focus,
-		&:active {
-			color: tint($basecolor,15);
-		}
-	}
 }
 
-/* Navigation */
-
-.navWrapper {
-	text-align: center;
+.header__arrow {
+	background-image: url(../img/button_further.png);
+	width: 66px;
+	height: 72px;
+	margin: 0 auto;
+	margin-top: 20vh;
 }
+
+//
+// Navigation
+//
 
 .nav {
-	-webkit-padding-start: 0px;
+	float: right;
+	margin-right: 5vw;
+	color: white;
 }
 
-.nav li {
+.nav a {
+	color: white;
+}
+
+.nav a:hover {
+	color: $basecolor;
+}
+
+.nav__item {
 	display: inline-block;
-	list-style-type: none;
-	text-transform: lowercase;
+	margin-right: 2em;
+	margin-top: 1em;
 }
 
-.nav li:before {
-	content: " / ";
+.nav__item--active {
+	color: $basecolor;
 }
 
-.nav li:first-child:before {
-	content: "";
+//
+// Content
+//
+
+.content {
+	max-width: $max-width;
+	margin: 5vh auto;
 }
 
-.current {
-	font-weight: bold;
+.content__section{
+
 }
 
-/*
- * Main Area
- */
+.content__heading {
+	font-size: 30px;
+}
 
- .about {
- 	border-bottom: 1px solid #d8d8d8;
- }
+.content__text {
 
-/*
- * Footer
- */
- .footer h3 {
- 	color: $grey;
- }
+}
+
+//
+// Footer
+//
+
+.footer {
+	background-color: $dark-background-color;
+	color: white;
+	margin: 0;
+}
+
+.footer__section {
+	width: 30vw;
+}
+
+.footer__heading {
+	font-size: 18px;
+}

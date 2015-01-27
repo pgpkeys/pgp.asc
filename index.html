@@ -10,6 +10,7 @@
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Merriweather|Open+Sans:600italic,300' rel='stylesheet' type='text/css'>
 
 	<!--[if lt IE 9]>
 		<script src="assets/js/html5shiv.min.js"></script>
@@ -18,76 +19,67 @@
 <body>
 	<!-- Header -->
 	<section class="header">
-		<!-- Logo -->
-		<div class="logo">
-			<h1 class="logo"><a href="index.html">pgp.asc</a></h1>
-		</div>
 		<!-- Navigation -->
-		<div class="navWrapper">
-			<ul class="nav">
-				<li class="current"><a href="index.html">About</a>
-				</li>
-				<!-- <li><a href="team.html">The Team</a></li>
-				<li><a href="submit.html">Submit</a></li> -->
-				<li><a href="halloffame.html">Hall Of Fame</a>
-				</li>
-			</ul>
-		</div>
+		<ul class="nav">
+			<a href="index.html"><li class="nav__item nav__item--active">Home</li></a>
+			<a href="halloffame.html"><li class="nav__item">Hall of Fame</li></a>
+			<a href="pgpguide.html"><li class="nav__item">PGP Guide</li></a>
+		</ul>
+		<!-- End of Navigation -->
+		
+		<img src="assets/img/icon_maze_key.svg" alt="pgp.asc logo" class="header__logo"></img>
+		<h1 class="header__heading">pgp.asc</h1>
+		<h2 class="header__subheading">Decentralize public PGP keys</h2>
+
+		<div class="header__arrow"></div>
 	</section>
 	<!-- End of Header -->
 
-	<!-- Main Area -->
-	<section class="main">
-		<!-- Main Area First Row -->
-		<div class="grid-container">
-			<div class="grid-100 about">
-				<h1>About</h1>
-			</div>
-			<div class="grid-50">
-				<h2>What is pgp.asc?</h2>
-				<p>pgp.asc is an initiative to decentralize public PGP keys, making it easier to get an up to date and authenticated key. </p>
-				<p>Sounds complicated? It isn’t: Just upload your public PGP key to your websites root folder and you’re good to go!</p>
-			</div>
-			<div class="grid-50">
-				<h2>How and where?</h2>
-				<p>Simply put your public key in a file called pgp.asc in the root of your server. That way people can find your PGP key by going to https://url.com/pgp.asc.</p>
-				<p>This takes less time than to search in a public key server, and absolutely guarantees authenticity. </p>
-			</div>
+	<!-- Content -->
+	<section class="content">
+		<div class="content__section content__section--what">
+			<!-- <img src="assets/img/icon_maze_key.svg" alt="Hexagonal Maze with a key in the middle" class="content__hex"></img> -->
+			<h3 class="content__heading">What is pgp.asc?</h3>
+			<p class="content__text">pgp.asc is an initiative to decentralize public PGP keys, making it easier to get an up to date and authenticated key.</p> 
+			<p class="content__text">Sounds complicated? It isn’t: Just upload your public PGP key to your websites root folder and you’re good to go!</p>
 		</div>
-
-		<!-- Main Area Second Row -->
-		<div class="grid-container">
-			<div class="grid-50">
-				<h2>Why should I?</h2>
-				<p>To make it easier to find your public PGP key, and validate it. (Since only you have access to your server) To provide an up to date key, as you can delete your old one. To spread the word about encryption.</p>
-			</div>
-			<div class="grid-50">
-				<h2>What is PGP?</h2>
-				<p>PGP ("Pretty Good Privacy") is a piece of software created by Phil Zimmermann in 1991 to encrypt digital information. Today, it’s mostly used to send encrypted mail messages. Learn more <a href="http://curtiswallen.com/pgp/">here</a>.</p>
-			</div>
+		<div class="content__section content__section--how">
+			<img class="content__hex"></img>
+			<h3 class="content__heading">How and where?</h3>
+			<p class="content__text">Simply put your public key in a file called pgp.asc in the root of your server. That way people can find your PGP key by going to https://url.com/pgp.asc.</p>
+			<p class="content__text">This takes less time than to search in a public key server, and absolutely guarantees authenticity.</p>
+		</div>
+		<div class="content__section content__section--why">
+			<img class="content__hex"></img>
+			<h3 class="content__heading">Why should I?</h3>
+			<p class="content__text">To make it easier to find your public PGP key, and validate it. (Since only you have access to your server) To provide an up to date key, as you can delete your old one. To spread the word about encryption.</p>
 		</div>
 	</section>
-	<!-- End of Main Area -->
-
+	<!-- End of Content -->
+	
 	<!-- Footer -->
 	<section class="footer">
-		<div class="grid-container">
-			<div class="grid-33">
-				<h3>Are you using pgp.asc?</h3>
-				<p>Awesome, send the link of your website to <a href="mailto:contact@mstoiber.com">this e-mail</a> and we'll add you to our Hall Of Fame!</p>
-			</div>
-			<div class="grid-33">
-				<h3>Contact and Social Links</h3>
-				<p>Want to contribute? Head over to <a href="http://github.com/mstoiber/pgp.asc">GitHub</a>!</p>
-			</div>
-			<div class="grid-33">
-				<h3>License</h3>
-				<p>pgp.asc is available under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 License.</a>
-				</p>
-			</div>
+		<div class="footer__section">
+			<h4 class="footer__heading">Are you using pgp.asc?</h4>
+			<p class="footer__text">Awesome! Submit your site below:</p>
+			<!-- Form -->
+			<form action="addtohalloffame.php" class="footer__form">
+				<input type="text" name="name" class="footer__input--name">
+				<input type="text" name="site" class="footer__input--site">
+				<input type="submit" value="Submit">
+			</form>
+			<!-- End of Form -->
+		</div>
+		<div class="footer__section footer__section--social">
+			<div class="footer__social--github"></div>
+			<div class="footer__social--facebook"></div>
+			<div class="footer__social--twitter"></div>
+		</div>
+		<div class="footer__section footer__section--contribute">
+			<h4 class="footer__heading">Contribute</h4>
+			<p class="footer__text">Head over to <a href="https://github.com/mstoiber/pgp.asc">GitHub</a> to join the discussion!</p>
 		</div>
 	</section>
-	<!-- End of Footer -->
 
 	<!-- Google Analytics -->
 	<script>
