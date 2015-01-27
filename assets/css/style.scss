@@ -154,18 +154,29 @@ a:hover {
 //
 
 .footer {
+	width: 100%;
+	display: inline-block;
 	background-color: $dark-background-color;
 	color: white;
 	margin: 0;
-	display: none;
+}
+
+.wrapper {
+	max-width: $max-width;
+	margin: 0 auto;
 }
 
 .footer__section {
-	width: 30vw;
+	width: 30%;
+	float: left;
 }
 
 .footer__heading {
 	font-size: 18px;
+}
+
+.footer__input {
+	clear: both;
 }
 
 //
@@ -186,6 +197,7 @@ a:hover {
 		display: block;
 		margin: 0 auto;
 		float: none;
+		width: 40%;
 	}
 
 	.content__heading {
@@ -193,6 +205,14 @@ a:hover {
 	}
 
 	.content__text {
+		width: 100%;
+	}
+	.wrapper {
+		clear: both;
+	}
+	.footer__section {
+		float: none;
+		margin: 0 2vw;
 		width: 100%;
 	}
 }

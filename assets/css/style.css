@@ -457,16 +457,25 @@ a:hover {
   margin-top: 0; }
 
 .footer {
+  width: 100%;
+  display: inline-block;
   background-color: black;
   color: white;
-  margin: 0;
-  display: none; }
+  margin: 0; }
+
+.wrapper {
+  max-width: 768px;
+  margin: 0 auto; }
 
 .footer__section {
-  width: 30vw; }
+  width: 30%;
+  float: left; }
 
 .footer__heading {
   font-size: 18px; }
+
+.footer__input {
+  clear: both; }
 
 @media screen and (max-width: 768px) {
   .content {
@@ -479,12 +488,21 @@ a:hover {
   .content__hex {
     display: block;
     margin: 0 auto;
-    float: none; }
+    float: none;
+    width: 40%; }
 
   .content__heading {
     width: 100%; }
 
   .content__text {
+    width: 100%; }
+
+  .wrapper {
+    clear: both; }
+
+  .footer__section {
+    float: none;
+    margin: 0 2vw;
     width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
