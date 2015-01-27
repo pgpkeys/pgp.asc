@@ -418,9 +418,7 @@ a:hover {
   margin-top: 0; }
 
 .header__arrow {
-  background-image: url(../img/button_further.png);
-  width: 66px;
-  height: 72px;
+  display: block;
   margin: 0 auto;
   margin-top: 20vh; }
 

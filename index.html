@@ -16,6 +16,8 @@
 	<!--[if lt IE 9]>
 		<script src="assets/js/html5shiv.min.js"></script>
 	<![endif]-->
+
+	<script type="text/javascript" src="assets/js/hover.js" async></script>
 </head>
 <body>
 	<!-- Header -->
@@ -32,12 +34,12 @@
 		<h1 class="header__heading">pgp.asc</h1>
 		<h2 class="header__subheading">Decentralize public PGP keys</h2>
 
-		<div class="header__arrow"></div>
+		<a href="#content" class="header__arrow"><img src="assets/img/button_further.svg" class="header__arrow"></img></a>
 	</section>
 	<!-- End of Header -->
 
 	<!-- Content -->
-	<section class="content">
+	<section class="content" id="content">
 		<div class="content__section group">
 			<img src="assets/img/icon_maze_key.svg" alt="Hexagonal Maze with a key in the middle" class="content__hex"></img>
 			<h3 class="content__heading">What is pgp.asc?</h3>
@@ -74,9 +76,9 @@
 			</div>
 			<div class="footer__section footer__section--social">
 				<h4 class="footer_heading">Social Links</h4>
-				<img src="assets/img/social_github.svg" class="footer__social--github"></img>
-				<img src="assets/img/social_twitter.svg" class="footer__social--twitter"></img>
-				<img src="assets/img/social_fb.svg" class="footer__social--facebook"></img>
+				<a href="https://github.com/mstoiber/pgp.asc"><img src="assets/img/social_github.svg" class="social_github" onmouseover="hover(this);" onmouseout="unhover(this);"></img></a>
+				<a href="https://twitter.com/mstoiber05"><img src="assets/img/social_twitter.svg" class="social_twitter" onmouseover="hover(this);" onmouseout="unhover(this);"></img></a>
+				<a href="#"><img src="assets/img/social_fb.svg" class="social_fb" onmouseover="hover(this);" onmouseout="unhover(this);"></img></a>
 			</div>
 			<div class="footer__section footer__section--contribute">
 				<h4 class="footer__heading">Contribute</h4>
