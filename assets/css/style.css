@@ -418,9 +418,11 @@ a:hover {
   margin-top: 0; }
 
 .header__arrow {
-  display: block;
+  position: absolute;
+  bottom: 5%;
   margin: 0 auto;
-  margin-top: 20vh; }
+  left: 0;
+  right: 0; }
 
 .nav {
   float: right;
@@ -516,6 +518,9 @@ input[type="text"] {
   font-style: italic; }
 
 @media screen and (max-width: 768px) {
+  .header__logo {
+    margin-top: 15vh; }
+
   .content {
     margin-left: 2vw;
     margin-right: 2vw; }
