@@ -422,7 +422,8 @@ a:hover {
   bottom: 5%;
   margin: 0 auto;
   left: 0;
-  right: 0; }
+  right: 0;
+  height: 5vh; }
 
 .nav {
   float: right;
@@ -518,9 +519,6 @@ input[type="text"] {
   font-style: italic; }
 
 @media screen and (max-width: 768px) {
-  .header__logo {
-    margin-top: 15vh; }
-
   .content {
     margin-left: 2vw;
     margin-right: 2vw; }
@@ -547,5 +545,17 @@ input[type="text"] {
 
   .footer__form--input {
     display: block; } }
+@media screen and (max-height: 870px) {
+  .header__logo {
+    margin-top: 15vh; }
+
+  .header__heading {
+    font-size: 60px; }
+
+  .header__subheading {
+    font-size: 27px; }
+
+  .header__arrow {
+    height: 10vh; } }
 
 /*# sourceMappingURL=style.css.map */

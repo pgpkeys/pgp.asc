@@ -11,6 +11,7 @@ $dark-background-color: #1b1b1b;
 $grey: #888888;
 
 $max-width: 768px;
+$max-height: 870px;
 
 // Mixins
 
@@ -100,6 +101,7 @@ a:hover {
 	margin: 0 auto;
 	left: 0;
 	right: 0;
+	height: 5vh;
 }
 
 //
@@ -231,9 +233,6 @@ input[type="text"] {
 //
 
 @media screen and (max-width: $max-width) {
-	.header__logo {
-		margin-top: 15vh;
-	}
 
 	.content {
 		margin-left: 2vw;
@@ -266,5 +265,23 @@ input[type="text"] {
 	}
 	.footer__form--input {
 		display: block;
+	}
+}
+
+@media screen and (max-height: $max-height) {
+	.header__logo {
+		margin-top: 15vh;
+	}
+
+	.header__heading {
+		font-size: 60px;
+	}
+
+	.header__subheading {
+		font-size:27px;
+	}
+
+	.header__arrow {
+		height: 10vh;
 	}
 }
