@@ -10,7 +10,7 @@ $basecolor: #81ddb9;
 $dark-background-color: #1b1b1b;
 $grey: #888888;
 
-$max-width: 768px;
+$max-width: 818px; // 818px
 $max-height: 870px;
 
 // Mixins
@@ -69,6 +69,11 @@ code {
  	font-size:85%;
  	background-color: rgba(0,0,0,0.04);
  	border-radius: 3px;
+}
+
+p {
+	line-height: 1.7em;
+	letter-spacing: 0.03em;
 }
 
 //
@@ -146,7 +151,7 @@ code {
 //
 
 .content {
-	max-width: $max-width + 50px;
+	max-width: $max-width;
 	margin: 0 auto;
 	padding: 7.5vh 0;
 }
@@ -171,6 +176,11 @@ code {
 	width: 65%;
 	float: right;
 	margin-top: 0;
+}
+
+.content--long {
+	max-width: 640px;
+	margin: 0 auto;
 }
 
 //
