@@ -8,88 +8,85 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="icon" href="assets/img/icon_maze_key.png">
+	<link rel="icon" href="assets/img/icon_maze_key.ico">
 
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Merriweather|Open+Sans:600italic,300' rel='stylesheet' type='text/css'>
 
 	<!--[if lt IE 9]>
 		<script src="assets/js/html5shiv.min.js"></script>
 	<![endif]-->
+
+	<script type="text/javascript" src="assets/js/hover.js" async></script>
 </head>
 <body>
-
 	<!-- Header -->
 	<section class="header">
-		<!-- Logo -->
-		<div class="logo">
-			<h1 class="logo"><a href="index.html">pgp.asc</a></h1>
-		</div>
 		<!-- Navigation -->
-		<div class="navWrapper">
-			<ul class="nav">
-				<li><a href="index.html">About</a>
-				</li>
-				<!-- <li><a href="team.html">The Team</a></li>
-				<li><a href="submit.html">Submit</a></li> -->
-				<li class="current"><a href="halloffame.html">Hall Of Fame</a>
-				</li>
-			</ul>
-		</div>
+		<ul class="nav">
+			<a href="index.html"><li class="nav__item nav__item--active">Home</li></a>
+			<a href="halloffame.html"><li class="nav__item">Hall of Fame</li></a>
+			<a href="pgpguide.html"><li class="nav__item">PGP Guide</li></a>
+		</ul>
+		<!-- End of Navigation -->
+		
+		<img src="assets/img/icon_maze_key.svg" alt="pgp.asc logo" class="header__logo" id="logo"></img>
+		<h1 class="header__heading">pgp.asc</h1>
+		<h2 class="header__subheading">Decentralize public PGP keys</h2>
+
+		<a href="#content" class="header__arrow"><img src="assets/img/button_further.svg" class="header__arrow"></img></a>
 	</section>
 	<!-- End of Header -->
 
-	<!-- Main Area -->
-	<section class="main">
-		<div class="grid-container">
-			<div class="grid-100 about">
-				<h1>Hall of Fame</h1>
-			</div>
-		</div>
-		<div class="grid-container">
-			<div class="grid-50 suffix-50">
-				<p>To get in the Hall of Fame, simply send the link of your website to contact [at] mstoiber [dot] com.</p>
-			</div>
-		</div>
-		<div class="grid-container">
-			<div class="grid-100">
-				<ul>
-					<li>Maximilian Stoiber - <a href="http://mstoiber.com/">http://mstoiber.com</a></li>
-					<li>Marco Zehe - <a href="http://zehe-edv.de/">http://zehe-edv.de</a></li>
-					<li>Eric Eggert - <a href="http://yatil.de/">http://yatil.de</a></li>
-					<li>Tom Arnold - <a href="http://tomarnold.de/">http://tomarnold.de</a></li>
-					<li>Lukas Bestle - <a href="http://lukasbestle.com/">https://lukasbestle.com</a></li>
-					<li>Anselm Hannemann - <a href="http://helloanselm.com/">https://helloanselm.com</a></li>
-					<li>Knut Ahlers - <a href="http://luzifer.io">http://luzifer.io</a></li>
-					<li>Jan-C. Borchardt - <a href="http://jancborchardt.net">http://jancborchardt.net</a></li>
-					<li>Daniel Rauber - <a href="http://danielrauber.de/">http://danielrauber.de/</a></li>
-					<li>John Griffiths - <a href="http://uxgent.co">http://uxgent.co</a></li>
-					<li>Ludvig Omholt - <a href="http://ludde.net">http://ludde.net</a></li>
-					<li>Chris Robinson - <a href="http://chrisrobinson.me">http://chrisrobinson.me/</a></li>
-					<li>Jan Jambor - <a href="https://jambor.pro">https://jambor.pro</a></li>
-				</ul>
-			</div>
-		</div>
+	<!-- Content -->
+	<section class="content" id="content">
+		<h1>Hall of Fame</h1>
+		<p>To get in the Hall of Fame, simply send the link of your website to contact [at] mstoiber [dot] com.</p>	
+		<ul>
+			<li>Maximilian Stoiber - <a href="http://mstoiber.com/">http://mstoiber.com</a></li>
+			<li>Marco Zehe - <a href="http://zehe-edv.de/">http://zehe-edv.de</a></li>
+			<li>Eric Eggert - <a href="http://yatil.de/">http://yatil.de</a></li>
+			<li>Tom Arnold - <a href="http://tomarnold.de/">http://tomarnold.de</a></li>
+			<li>Lukas Bestle - <a href="http://lukasbestle.com/">https://lukasbestle.com</a></li>
+			<li>Anselm Hannemann - <a href="http://helloanselm.com/">https://helloanselm.com</a></li>
+			<li>Knut Ahlers - <a href="http://luzifer.io">http://luzifer.io</a></li>
+			<li>Jan-C. Borchardt - <a href="http://jancborchardt.net">http://jancborchardt.net</a></li>
+			<li>Daniel Rauber - <a href="http://danielrauber.de/">http://danielrauber.de/</a></li>
+			<li>John Griffiths - <a href="http://uxgent.co">http://uxgent.co</a></li>
+			<li>Ludvig Omholt - <a href="http://ludde.net">http://ludde.net</a></li>
+			<li>Chris Robinson - <a href="http://chrisrobinson.me">http://chrisrobinson.me/</a></li>
+			<li>Jan Jambor - <a href="https://jambor.pro">https://jambor.pro</a></li>
+		</ul>
 	</section>
-	<!-- End of Main Area -->
-
+	<!-- End of Content -->
+	
 	<!-- Footer -->
 	<section class="footer">
-		<div class="grid-container">
-			<div class="grid-33">
-				<h3>Are you using pgp.asc?</h3>
-				<p>Awesome, send the link of your website to contact [at] mstoiber [dot] com and we'll add you to our Hall Of Fame!</p>
+		<div class="wrapper">
+			<div class="footer__section">
+				<h4 class="footer__heading">Are you using pgp.asc?</h4>
+				<p class="footer__text">Awesome! Submit your site below:</p>
+				<!-- Form -->
+				<form action="addtohalloffame.php" class="footer__form">
+					<input type="text" name="name" class="footer__form--input" placeholder="Your name">
+					<input type="text" name="site" class="footer__form--input" placeholder="Your site">
+					<input type="image" src="assets/img/button_submit.png" alt="submit" value="Submit" class="footer__form--submit-button">
+				</form>
+				<!-- End of Form -->
 			</div>
-			<div class="grid-33">
-				<h3>Contact and Social Links</h3>
-				<p>Want to contribute? Head over to <a href="http://github.com/mstoiber/pgp.asc">GitHub</a>!</p>
+			<div class="footer__section footer__section--social">
+				<h4 class="footer_heading">Social Links</h4>
+				<a href="https://github.com/mstoiber/pgp.asc"><img src="assets/img/social_github.svg" class="social_github" onmouseover="hover(this);" onmouseout="unhover(this);"></img></a>
+				<a href="https://twitter.com/mstoiber05"><img src="assets/img/social_twitter.svg" class="social_twitter" onmouseover="hover(this);" onmouseout="unhover(this);"></img></a>
+				<a href="#"><img src="assets/img/social_fb.svg" class="social_fb" onmouseover="hover(this);" onmouseout="unhover(this);"></img></a>
 			</div>
-			<div class="grid-33">
-				<h3>License</h3>
-				<p>pgp.asc is available under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 License.</a>
-				</p>
+			<div class="footer__section footer__section--contribute">
+				<h4 class="footer__heading">Contribute</h4>
+				<p class="footer__text">Head over to <a href="https://github.com/mstoiber/pgp.asc">GitHub</a> to join the discussion!</p>
 			</div>
 		</div>
 	</section>
-	<!-- End of Footer -->
 
 	<!-- Google Analytics -->
 	<script>

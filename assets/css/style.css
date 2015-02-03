@@ -393,6 +393,13 @@ a:hover {
   -o-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out; }
 
+code {
+  padding: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 3px; }
+
 .header {
   height: 100vh;
   width: 100vw;
