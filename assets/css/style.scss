@@ -236,6 +236,39 @@ input[type="text"] {
    font-style: italic;  
 }
 
+.social__github {
+	display: inline-block;
+	width: 68px;
+	height: 79px;
+	background-image: url("../../assets/img/social_github.svg");
+}
+
+.social__github:hover {
+	background-image: url("../../assets/img/social_github_hover.svg");
+}
+
+.social__twitter {
+	display: inline-block;
+	width: 68px;
+	height: 79px;
+	background-image: url("../../assets/img/social_twitter.svg");
+}
+
+.social__twitter:hover {
+	background-image: url("../../assets/img/social_twitter_hover.svg");
+}
+
+.social__fb {
+	display: inline-block;
+	width: 68px;
+	height: 79px;
+	background-image: url("../../assets/img/social_fb.svg");
+}
+
+.social__fb:hover {
+	background-image: url("../../assets/img/social_fb_hover.svg");
+}
+
 //
 // Media Queries
 //
