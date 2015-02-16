@@ -334,49 +334,51 @@ input[type="text"] {
 		display: block;
 		visibility: hidden;
 		opacity: 0;
-		height: auto;
-		margin: 0 auto;
-		top: 41px; // Magic number
-		position: absolute;
+		top: 0;
+		height: 100vh;
+		width: 100vh;
+		position: fixed;
 		padding: 0;
 		transition: visibility linear 100ms,opacity 100ms linear;
+		z-index: 2;
+		background-color: $dark-background-color;
+		border-top: 0.5vh solid #81ddb9;
 	}
 
 	.nav__item {
-		clear: both;
-		float: left;
-		text-align: center;
 		width: 100vw;
-		margin: 0;
-		background-color: #232323;
+		margin-top: 0;
+		text-align: center;
+	}
+
+	.nav__item:first-of-type {
+		margin-top: 35vh;
 	}
 
 	.nav__item li {
-		width: 90%;
-		border-bottom:1px solid #1a5f4e;
-		margin: 0 auto;
-		padding: 1em 0;
+		position: relative;
+
 	}
 
-	.nav__item:last-child li {
-		border: none;
-	}
-
-	nav a#pull {
+	#pull {
 		display: block;
 		width: 100%;
-		position: relative;
+		position: fixed;
+		z-index: 3;
 	}
 
-	nav a#pull:after {
+	#pull:after {
 		content:"";
-		background: url('../img/icon_hamburger.svg') no-repeat;
+		background: url('../img/icon_hamburger.svg') no-repeat center center;
 		width: 26px;
 		height: 17px;
 		display: inline-block;
 		position: absolute;
 		right: 15px;
 		top: 5px;
+		z-index: 3;
+		background-color: $dark-background-color;
+		padding: 5px;
 	}
 
 	#icon img {
@@ -425,16 +427,12 @@ input[type="text"] {
 		float: none;
 		margin: 0 2vw;
 		width: 94%;
+		max-width: 350px;
 	}
 
 	.footer__form--input {
 		display: block;
 		width: 100%;
-	}
-
-	.footer__form--submit-button {
-		float: right;
-		margin-right: 4%;
 	}
 }
 
