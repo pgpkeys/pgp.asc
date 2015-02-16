@@ -341,8 +341,11 @@ input[type="text"] {
 		padding: 0;
 		transition: visibility linear 100ms,opacity 100ms linear;
 		z-index: 2;
-		background-color: $dark-background-color;
-		border-top: 0.5vh solid #81ddb9;
+		background-color: $basecolor;
+	}
+
+	.nav a {
+		color: $dark-background-color;
 	}
 
 	.nav__item {
@@ -351,8 +354,13 @@ input[type="text"] {
 		text-align: center;
 	}
 
+	.nav__item--active {
+		color: $dark-background-color;
+		text-decoration: underline;
+	}
+
 	.nav__item:first-of-type {
-		margin-top: 35vh;
+		margin-top: 25vh;
 	}
 
 	.nav__item li {

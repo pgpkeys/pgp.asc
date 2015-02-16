@@ -611,16 +611,22 @@ input[type="text"] {
     padding: 0;
     transition: visibility linear 100ms,opacity 100ms linear;
     z-index: 2;
-    background-color: #1b1b1b;
-    border-top: 0.5vh solid #81ddb9; }
+    background-color: #81ddb9; }
+
+  .nav a {
+    color: #1b1b1b; }
 
   .nav__item {
     width: 100vw;
     margin-top: 0;
     text-align: center; }
 
+  .nav__item--active {
+    color: #1b1b1b;
+    text-decoration: underline; }
+
   .nav__item:first-of-type {
-    margin-top: 35vh; }
+    margin-top: 25vh; }
 
   .nav__item li {
     position: relative; }
